@@ -13,7 +13,7 @@ count_var = 0
 
 @router.get('', response_model=PingResponse, status_code=status.HTTP_200_OK)
 async def ping():
-    print("Pingou!")
+    print("Foi pingado!")
     global count_var
     count_var += 1
 
