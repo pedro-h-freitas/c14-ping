@@ -11,9 +11,10 @@ router = APIRouter(prefix='/ping')
 global count_var
 count_var = 0
 
+
 @router.get('', response_model=PingResponse, status_code=status.HTTP_200_OK)
 async def ping():
-    print("Pingou!")
+    print("Foi pingado!!!!")
     global count_var
     count_var += 1
 
@@ -28,6 +29,7 @@ async def ping():
     asyncio.create_task(fire_and_forget())
 
     return PingResponse()
+
 
 @router.get('/count', status_code=status.HTTP_200_OK)
 def count():
