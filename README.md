@@ -1,7 +1,8 @@
 # The Ping of The Pong
 Is an API wich recives a request and throw back a new request to complementary API ["The Pong of The Ping"](https://github.com/Fiddelis/c14-pong)
 
-## Initial configuration
+## Instalation
+### Initial configuration
 
 1. Install Python
 Follow the installation in [Python Download](https://www.python.org/downloads)
@@ -9,7 +10,7 @@ Follow the installation in [Python Download](https://www.python.org/downloads)
 2. Install Poetry
 Follow the installation in [Poerty Download](https://python-poetry.org/docs/#installation)
 
-## How to Install
+### How to Install
 1. Clone the repository
 ```
 git clone https://github.com/pedro-h-freitas/c14-ping.git
@@ -30,3 +31,6 @@ poetry run fastapi run src/c14_ping/main.py --reload
 ```
 poetry build
 ```
+
+## Confilict Resolution
+The merge conflict was resolved via GitHub.
