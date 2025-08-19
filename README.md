@@ -32,5 +32,5 @@ poetry run fastapi run src/c14_ping/main.py --reload
 poetry build
 ```
 
-## Confilict Resolution
+## Conflict Resolution
 The merge conflict was resolved via GitHub.
