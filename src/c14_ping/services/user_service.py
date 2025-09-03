@@ -18,6 +18,8 @@ class UserService:
 
     async def login(self, email: str, password: str) -> TokenOut:
         user_on_db = await self.user_repository.get_by_email(email)
+        if not user_on_db or not verify_password(password, user_on_db.password):
+            raise InvalidCredentialsException
 
         access_token = create_access_token(
             subject=user_on_db.email,
